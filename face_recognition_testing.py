@@ -28,7 +28,7 @@ def knn(X,Y,test,k=5):
 
 
 cam = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier('C:/Users/ASUS/Desktop/p/CB ML/machine-learning-june-2019/Lecture-03 FaceRecognition/haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier("C:/Users/ASUS/Desktop/p/ML/Face_Recignition-using-Knn/haarcascade_frontalface_alt.xml")
 
 dataset_path = "C:/Users/ASUS/Desktop/p/ML/ML/Dataset/"
 labels = []

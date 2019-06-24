@@ -4,7 +4,7 @@ import numpy as np
 # read a video stream and display it.
 
 cam = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier('C:/Users/ASUS/Desktop/p/CB ML/machine-learning-june-2019/Lecture-03 FaceRecognition/haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier("C:/Users/ASUS/Desktop/p/ML/Face_Recignition-using-Knn/haarcascade_frontalface_alt.xml")
 
 face_data = []
 c = 0
