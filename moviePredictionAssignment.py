@@ -36,10 +36,21 @@ corpus = []
 for i in range(m):
 	corpus.append(train_x[i])
 
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
+
+print("done first step")
+
+tf_Idfv = TfidfVectorizer()
+vd = tf_Idfv.fit_transform(corpus).toarray()
+print("done step two")
+
+
 outputMovie = sys.argv[1]
 out = open(outputMovie,'w',encoding="utf8")
 
-for ix in corpus:
+for ix in vd:
 	print((ix),file=out)
 
-outputMovie = sys.argv[1]
+close(out)
